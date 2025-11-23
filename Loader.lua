@@ -14,7 +14,7 @@ if not isfolder(LogsFolder) then makefolder(LogsFolder) end
 if isfolder(MainFolder) and isfolder(ConfigFolder) and isfolder(LogsFolder) then
 	if game.PlaceId == 6872274481 or game.PlaceId == 8560631822 or game.PlaceId == 8444591321 then
 		writefile(LogsFolder .. "/support_issue_" .. game.PlaceId .. ".txt", "This game is not supported by Eternal")
-	elseif game.PlaceId == 11630038968 then
+	elseif game.PlaceId == 139566161526375 then
 		loadstring(game:HttpGet(BridgeDuels))()
 	else
 		loadstring(game:HttpGet(Universal))()
