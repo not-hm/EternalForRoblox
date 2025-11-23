@@ -325,7 +325,7 @@ spawn(function()
 			Enabled = callback
 			if callback then
 				repeat
-					task.wait(1.5)
+					task.wait(0.8)
 					if IsAlive(LocalPlayer) then
 						local Player = GetPlayer(KillAuraDistance, KillAuraPlayerModes)
 						if Player then
