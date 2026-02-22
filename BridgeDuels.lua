@@ -344,7 +344,7 @@ spawn(function()
 									}
 									game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ToolService"):WaitForChild("RF"):WaitForChild("ToggleBlockSword"):InvokeServer(unpack(args))
 								end
-								spawn(function()
+								task.spawn(function()
 									if Enabled then
 										if KillAuraAnimation ~= nil then
 											for i,v in pairs(KillAuraAnimation) do
@@ -355,7 +355,7 @@ spawn(function()
 										end
 									end
 								end)
-								spawn(function()
+								task.spawn(function()
 									if Enabled and BillboardGui and ImageLabel then
 										BillboardGui.Active = true
 										BillboardGui.AlwaysOnTop = true
